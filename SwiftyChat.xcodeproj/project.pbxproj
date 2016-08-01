@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84D10C9A1D4D8643009755D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D10C991D4D8643009755D5 /* AppDelegate.swift */; };
-		84D10C9C1D4D8643009755D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D10C9B1D4D8643009755D5 /* ViewController.swift */; };
+		843F202B1D4EC9EA00D6CBEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 843F202A1D4EC9EA00D6CBEC /* GoogleService-Info.plist */; };
+		843F20301D4EE32C00D6CBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F202F1D4EE32C00D6CBEC /* AppDelegate.swift */; };
+		843F20321D4EE3D700D6CBEC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F20311D4EE3D700D6CBEC /* SignInViewController.swift */; };
+		843F20341D4EE41A00D6CBEC /* Appstate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F20331D4EE41A00D6CBEC /* Appstate.swift */; };
+		843F20361D4EE43500D6CBEC /* MeasurementHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F20351D4EE43500D6CBEC /* MeasurementHelper.swift */; };
+		843F20381D4EE45300D6CBEC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F20371D4EE45300D6CBEC /* Constants.swift */; };
+		843F203C1D4EF06A00D6CBEC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F203B1D4EF06A00D6CBEC /* ChatViewController.swift */; };
 		84D10C9F1D4D8643009755D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D10C9D1D4D8643009755D5 /* Main.storyboard */; };
 		84D10CA11D4D8643009755D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D10CA01D4D8643009755D5 /* Assets.xcassets */; };
 		84D10CA41D4D8643009755D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D10CA21D4D8643009755D5 /* LaunchScreen.storyboard */; };
+		84D10CB01D4DA6C5009755D5 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D10CAF1D4DA6C5009755D5 /* FirebaseController.swift */; };
+		ED06680320CF835D74E15527 /* Pods_SwiftyChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6101CC7C25FBB169CC7C4E /* Pods_SwiftyChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C6101CC7C25FBB169CC7C4E /* Pods_SwiftyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30020A3F25EDE24EDE8369AA /* Pods-SwiftyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyChat/Pods-SwiftyChat.release.xcconfig"; sourceTree = "<group>"; };
+		5A82B67F47AE89223DBFED58 /* Pods-SwiftyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyChat/Pods-SwiftyChat.debug.xcconfig"; sourceTree = "<group>"; };
+		843F202A1D4EC9EA00D6CBEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		843F202F1D4EE32C00D6CBEC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		843F20311D4EE3D700D6CBEC /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		843F20331D4EE41A00D6CBEC /* Appstate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appstate.swift; sourceTree = "<group>"; };
+		843F20351D4EE43500D6CBEC /* MeasurementHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
+		843F20371D4EE45300D6CBEC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		843F203B1D4EF06A00D6CBEC /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		84D10C961D4D8643009755D5 /* SwiftyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		84D10C991D4D8643009755D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84D10C9B1D4D8643009755D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84D10C9E1D4D8643009755D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84D10CA01D4D8643009755D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D10CA31D4D8643009755D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D10CA51D4D8643009755D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D10CAF1D4DA6C5009755D5 /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED06680320CF835D74E15527 /* Pods_SwiftyChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				84D10C981D4D8643009755D5 /* SwiftyChat */,
 				84D10C971D4D8643009755D5 /* Products */,
+				A4092981DC0B323225D16F4A /* Pods */,
+				98E7AB0E01A18D3E6F0A08F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,37 @@
 		84D10C981D4D8643009755D5 /* SwiftyChat */ = {
 			isa = PBXGroup;
 			children = (
-				84D10C991D4D8643009755D5 /* AppDelegate.swift */,
-				84D10C9B1D4D8643009755D5 /* ViewController.swift */,
+				843F202F1D4EE32C00D6CBEC /* AppDelegate.swift */,
+				843F20331D4EE41A00D6CBEC /* Appstate.swift */,
+				843F20371D4EE45300D6CBEC /* Constants.swift */,
+				84D10CAF1D4DA6C5009755D5 /* FirebaseController.swift */,
+				843F20351D4EE43500D6CBEC /* MeasurementHelper.swift */,
+				843F20311D4EE3D700D6CBEC /* SignInViewController.swift */,
 				84D10C9D1D4D8643009755D5 /* Main.storyboard */,
 				84D10CA01D4D8643009755D5 /* Assets.xcassets */,
 				84D10CA21D4D8643009755D5 /* LaunchScreen.storyboard */,
+				843F202A1D4EC9EA00D6CBEC /* GoogleService-Info.plist */,
 				84D10CA51D4D8643009755D5 /* Info.plist */,
+				843F203B1D4EF06A00D6CBEC /* ChatViewController.swift */,
 			);
 			path = SwiftyChat;
+			sourceTree = "<group>";
+		};
+		98E7AB0E01A18D3E6F0A08F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C6101CC7C25FBB169CC7C4E /* Pods_SwiftyChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4092981DC0B323225D16F4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A82B67F47AE89223DBFED58 /* Pods-SwiftyChat.debug.xcconfig */,
+				30020A3F25EDE24EDE8369AA /* Pods-SwiftyChat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D10CA81D4D8643009755D5 /* Build configuration list for PBXNativeTarget "SwiftyChat" */;
 			buildPhases = (
+				D8806CE959C2C4E334D6F248 /* [CP] Check Pods Manifest.lock */,
 				84D10C921D4D8643009755D5 /* Sources */,
 				84D10C931D4D8643009755D5 /* Frameworks */,
 				84D10C941D4D8643009755D5 /* Resources */,
+				2C1C5E10ED27E0C96A04A22F /* [CP] Embed Pods Frameworks */,
+				D39FEE3E9A6E5BBE77175B40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +141,7 @@
 				TargetAttributes = {
 					84D10C951D4D8643009755D5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UUCF9CV25S;
 					};
 				};
 			};
@@ -123,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D10CA41D4D8643009755D5 /* LaunchScreen.storyboard in Resources */,
+				843F202B1D4EC9EA00D6CBEC /* GoogleService-Info.plist in Resources */,
 				84D10CA11D4D8643009755D5 /* Assets.xcassets in Resources */,
 				84D10C9F1D4D8643009755D5 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +177,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C1C5E10ED27E0C96A04A22F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyChat/Pods-SwiftyChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D39FEE3E9A6E5BBE77175B40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyChat/Pods-SwiftyChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8806CE959C2C4E334D6F248 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84D10C921D4D8643009755D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D10C9C1D4D8643009755D5 /* ViewController.swift in Sources */,
-				84D10C9A1D4D8643009755D5 /* AppDelegate.swift in Sources */,
+				843F20321D4EE3D700D6CBEC /* SignInViewController.swift in Sources */,
+				843F20301D4EE32C00D6CBEC /* AppDelegate.swift in Sources */,
+				843F20361D4EE43500D6CBEC /* MeasurementHelper.swift in Sources */,
+				843F203C1D4EF06A00D6CBEC /* ChatViewController.swift in Sources */,
+				84D10CB01D4DA6C5009755D5 /* FirebaseController.swift in Sources */,
+				843F20381D4EE45300D6CBEC /* Constants.swift in Sources */,
+				843F20341D4EE41A00D6CBEC /* Appstate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,22 +349,26 @@
 		};
 		84D10CA91D4D8643009755D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A82B67F47AE89223DBFED58 /* Pods-SwiftyChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SwiftyChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = idewerks.SwiftyChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.idewerks.SwiftyChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		84D10CAA1D4D8643009755D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30020A3F25EDE24EDE8369AA /* Pods-SwiftyChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SwiftyChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = idewerks.SwiftyChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.idewerks.SwiftyChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -288,6 +392,7 @@
 				84D10CAA1D4D8643009755D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

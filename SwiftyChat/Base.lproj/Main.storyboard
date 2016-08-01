@@ -1,25 +1,197 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yun-ox-gw6">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Chat View Controller-->
+        <scene sceneID="252-Qt-ynH">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kpx-bS-lCQ" customClass="ChatViewController" customModule="SwiftyChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="EFI-jZ-w2a"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eqp-rZ-Xzz"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="Rya-Fa-kZC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="RdH-MS-wRQ">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="voQ-Be-yzJ">
+                            <connections>
+                                <action selector="signOut:" destination="Kpx-bS-lCQ" id="a6A-ew-6wi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="yun-ox-gw6" kind="show" identifier="ChatToSignIn" id="ECc-nu-dqc"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USV-XC-lOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1676" y="651"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1RX-Wo-fSV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DLq-xT-9Ae" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DlB-yV-gTM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kpx-bS-lCQ" kind="relationship" relationship="rootViewController" id="M84-Mw-J1e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yMD-gp-6J7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="651"/>
+        </scene>
+        <!--SignInViewController-->
+        <scene sceneID="eon-pV-Svk">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="yun-ox-gw6" userLabel="SignInViewController" customClass="SignInViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JNg-n0-Dah"/>
+                        <viewControllerLayoutGuide type="bottom" id="VHL-6D-1wW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fmk-Qe-jTB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="016-42-cDz">
+                                <rect key="frame" x="60" y="318" width="200" height="28"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="GEP-YS-c6a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="SIGN IN TO GET STARTED">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSignIn:" destination="yun-ox-gw6" eventType="touchUpInside" id="Jzr-iU-fnh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EqJ-2A-854">
+                                <rect key="frame" x="60" y="269" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuQ-M7-BRU">
+                                <rect key="frame" x="103" y="354" width="115" height="30"/>
+                                <state key="normal" title="Forgot Password">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didRequestPasswordReset:" destination="yun-ox-gw6" eventType="touchUpInside" id="UOd-Qs-bT0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q5C-1Z-J4u">
+                                <rect key="frame" x="60" y="231" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhw-iB-G6s">
+                                <rect key="frame" x="107" y="392" width="107" height="30"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSignUp:" destination="yun-ox-gw6" eventType="touchUpInside" id="YTs-np-2Gb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chatty McChatface!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aD-zV-wGP">
+                                <rect key="frame" x="60" y="170" width="200" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oao-f6-Hhp">
+                                <rect key="frame" x="114" y="452" width="92" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="HVd-uf-Yb7"/>
+                                    <constraint firstAttribute="width" constant="92" id="ReG-L3-PxG"/>
+                                </constraints>
+                                <state key="normal" image="Facebook Badges"/>
+                                <connections>
+                                    <action selector="FacebookLoginButton:" destination="yun-ox-gw6" eventType="touchUpInside" id="pem-sa-2Bx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1B-mw-wK7">
+                                <rect key="frame" x="180" y="455" width="130" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="FWa-kH-7Ae"/>
+                                </constraints>
+                                <state key="normal" image="Google Badges"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hL-TW-zQU">
+                                <rect key="frame" x="38" y="455" width="76" height="76"/>
+                                <state key="normal" image="Twitter Badges"/>
+                                <connections>
+                                    <action selector="TwitterLoginButton:" destination="yun-ox-gw6" eventType="touchUpInside" id="Pfy-3O-Bg8"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chatface" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-Fv-yZa">
+                                <rect key="frame" x="40" y="39" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="gut-fE-La2"/>
+                                    <constraint firstAttribute="width" constant="240" id="lYM-Ee-Qen"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.021180555560000001" green="0.3170019744" blue="0.66119791670000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DuQ-M7-BRU" firstAttribute="centerX" secondItem="016-42-cDz" secondAttribute="centerX" id="1Ov-9q-hbn"/>
+                            <constraint firstItem="EqJ-2A-854" firstAttribute="centerY" secondItem="Fmk-Qe-jTB" secondAttribute="centerY" id="3P9-Ke-Zhm"/>
+                            <constraint firstItem="q5C-1Z-J4u" firstAttribute="leading" secondItem="EqJ-2A-854" secondAttribute="leading" id="EaT-qu-UmN"/>
+                            <constraint firstItem="9aD-zV-wGP" firstAttribute="trailing" secondItem="q5C-1Z-J4u" secondAttribute="trailing" id="G6U-Sd-RXv"/>
+                            <constraint firstItem="q5C-1Z-J4u" firstAttribute="trailing" secondItem="EqJ-2A-854" secondAttribute="trailing" id="GgC-Dr-fDC"/>
+                            <constraint firstItem="Zhw-iB-G6s" firstAttribute="centerX" secondItem="DuQ-M7-BRU" secondAttribute="centerX" id="KOi-cB-o2e"/>
+                            <constraint firstItem="016-42-cDz" firstAttribute="leading" secondItem="EqJ-2A-854" secondAttribute="leading" id="Kko-XP-Jra"/>
+                            <constraint firstItem="DuQ-M7-BRU" firstAttribute="centerX" secondItem="Fmk-Qe-jTB" secondAttribute="centerX" id="RD0-9J-cdh"/>
+                            <constraint firstItem="L1B-mw-wK7" firstAttribute="leading" secondItem="6hL-TW-zQU" secondAttribute="trailing" constant="66" id="U6F-LL-fq9"/>
+                            <constraint firstItem="Oao-f6-Hhp" firstAttribute="top" secondItem="Zhw-iB-G6s" secondAttribute="bottom" constant="30" id="V1b-r5-uQh"/>
+                            <constraint firstItem="9aD-zV-wGP" firstAttribute="leading" secondItem="q5C-1Z-J4u" secondAttribute="leading" id="aHv-8P-C36"/>
+                            <constraint firstItem="q5C-1Z-J4u" firstAttribute="top" secondItem="9aD-zV-wGP" secondAttribute="bottom" constant="41" id="dw4-FB-exb"/>
+                            <constraint firstItem="eyD-Fv-yZa" firstAttribute="centerX" secondItem="9aD-zV-wGP" secondAttribute="centerX" id="fjc-Hl-IgX"/>
+                            <constraint firstItem="Oao-f6-Hhp" firstAttribute="leading" secondItem="6hL-TW-zQU" secondAttribute="trailing" id="hsk-BQ-EUE"/>
+                            <constraint firstItem="Oao-f6-Hhp" firstAttribute="centerY" secondItem="6hL-TW-zQU" secondAttribute="centerY" id="iwo-TV-e3p"/>
+                            <constraint firstItem="Zhw-iB-G6s" firstAttribute="top" secondItem="DuQ-M7-BRU" secondAttribute="bottom" constant="8" symbolic="YES" id="jgr-KL-MrC"/>
+                            <constraint firstItem="L1B-mw-wK7" firstAttribute="top" secondItem="6hL-TW-zQU" secondAttribute="top" id="lVz-DY-cqH"/>
+                            <constraint firstItem="DuQ-M7-BRU" firstAttribute="top" secondItem="016-42-cDz" secondAttribute="bottom" constant="8" symbolic="YES" id="rCg-Vs-0MV"/>
+                            <constraint firstItem="Oao-f6-Hhp" firstAttribute="centerX" secondItem="Zhw-iB-G6s" secondAttribute="centerX" id="roj-L2-g5J"/>
+                            <constraint firstItem="eyD-Fv-yZa" firstAttribute="top" secondItem="JNg-n0-Dah" secondAttribute="bottom" constant="19" id="tf9-jz-LgP"/>
+                            <constraint firstItem="EqJ-2A-854" firstAttribute="top" secondItem="q5C-1Z-J4u" secondAttribute="bottom" constant="8" symbolic="YES" id="uXg-Dw-l0G"/>
+                            <constraint firstItem="Oao-f6-Hhp" firstAttribute="leading" secondItem="6hL-TW-zQU" secondAttribute="trailing" id="xiL-fq-X3C"/>
+                            <constraint firstItem="016-42-cDz" firstAttribute="trailing" secondItem="EqJ-2A-854" secondAttribute="trailing" id="xl8-Yi-x0J"/>
+                            <constraint firstItem="016-42-cDz" firstAttribute="top" secondItem="EqJ-2A-854" secondAttribute="bottom" constant="19" id="z0s-Su-DMv"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="emailField" destination="q5C-1Z-J4u" id="7BP-pw-l0G"/>
+                        <outlet property="passwordField" destination="EqJ-2A-854" id="I8m-Qw-o13"/>
+                        <segue destination="DLq-xT-9Ae" kind="show" identifier="SignInToChat" id="crB-Un-hLh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whg-h5-R04" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="635"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Facebook Badges" width="76" height="76"/>
+        <image name="Google Badges" width="76" height="76"/>
+        <image name="Twitter Badges" width="76" height="76"/>
+        <image name="chatface" width="245" height="206"/>
+    </resources>
 </document>
