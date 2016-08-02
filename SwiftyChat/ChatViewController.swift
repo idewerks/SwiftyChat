@@ -24,8 +24,8 @@ class ChatViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-  @IBAction func signOut(sender: UIBarButtonItem) {
+  @IBAction func signOut(sender: UIButton) {
+
     
     let firebaseAuth = FIRAuth.auth()
     do {

@@ -16,15 +16,18 @@
                     <view key="view" contentMode="scaleToFill" id="Rya-Fa-kZC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7M-Db-VQ5">
+                                <rect key="frame" x="20" y="28" width="56" height="30"/>
+                                <state key="normal" title="LogOut"/>
+                                <connections>
+                                    <action selector="signOut:" destination="Kpx-bS-lCQ" eventType="touchUpInside" id="Ly9-Vf-krj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RdH-MS-wRQ">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="voQ-Be-yzJ">
-                            <connections>
-                                <action selector="signOut:" destination="Kpx-bS-lCQ" id="a6A-ew-6wi"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="RdH-MS-wRQ"/>
                     <connections>
                         <segue destination="yun-ox-gw6" kind="show" identifier="ChatToSignIn" id="ECc-nu-dqc"/>
                     </connections>
@@ -32,24 +35,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USV-XC-lOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1676" y="651"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="1RX-Wo-fSV">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DLq-xT-9Ae" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DlB-yV-gTM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Kpx-bS-lCQ" kind="relationship" relationship="rootViewController" id="M84-Mw-J1e"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yMD-gp-6J7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="864" y="651"/>
         </scene>
         <!--SignInViewController-->
         <scene sceneID="eon-pV-Svk">
@@ -110,7 +95,7 @@
                                     <action selector="didTapSignUp:" destination="yun-ox-gw6" eventType="touchUpInside" id="YTs-np-2Gb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chatty McChatface!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aD-zV-wGP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Swifty Chat!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aD-zV-wGP">
                                 <rect key="frame" x="60" y="170" width="200" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -140,7 +125,7 @@
                                     <action selector="TwitterLoginButton:" destination="yun-ox-gw6" eventType="touchUpInside" id="Pfy-3O-Bg8"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chatface" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-Fv-yZa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatface" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-Fv-yZa">
                                 <rect key="frame" x="40" y="39" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="gut-fE-La2"/>
@@ -180,12 +165,12 @@
                     <connections>
                         <outlet property="emailField" destination="q5C-1Z-J4u" id="7BP-pw-l0G"/>
                         <outlet property="passwordField" destination="EqJ-2A-854" id="I8m-Qw-o13"/>
-                        <segue destination="DLq-xT-9Ae" kind="show" identifier="SignInToChat" id="crB-Un-hLh"/>
+                        <segue destination="Kpx-bS-lCQ" kind="show" identifier="SignInToChat" id="vGV-zW-seq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whg-h5-R04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="351" y="635"/>
+            <point key="canvasLocation" x="457" y="635"/>
         </scene>
     </scenes>
     <resources>
