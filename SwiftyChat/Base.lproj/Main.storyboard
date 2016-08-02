@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Chat View Controller-->
+        <!--Chat-->
         <scene sceneID="252-Qt-ynH">
             <objects>
                 <viewController id="Kpx-bS-lCQ" customClass="ChatViewController" customModule="SwiftyChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,6 +27,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="chat" id="fvO-G9-J4G"/>
                     <navigationItem key="navigationItem" id="RdH-MS-wRQ"/>
                     <connections>
                         <segue destination="yun-ox-gw6" kind="show" identifier="ChatToSignIn" id="ECc-nu-dqc"/>
@@ -34,7 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USV-XC-lOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676" y="651"/>
+            <point key="canvasLocation" x="2488" y="651"/>
         </scene>
         <!--SignInViewController-->
         <scene sceneID="eon-pV-Svk">
@@ -165,18 +166,36 @@
                     <connections>
                         <outlet property="emailField" destination="q5C-1Z-J4u" id="7BP-pw-l0G"/>
                         <outlet property="passwordField" destination="EqJ-2A-854" id="I8m-Qw-o13"/>
-                        <segue destination="Kpx-bS-lCQ" kind="show" identifier="SignInToChat" id="vGV-zW-seq"/>
+                        <segue destination="HBf-ZQ-zmu" kind="show" identifier="SignInToChat" id="vGV-zW-seq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whg-h5-R04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="457" y="635"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IDO-zv-onb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HBf-ZQ-zmu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="mKo-pJ-23o">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Kpx-bS-lCQ" kind="relationship" relationship="viewControllers" id="QAS-Us-acu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UL3-C9-Jo0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816" y="651"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Facebook Badges" width="76" height="76"/>
         <image name="Google Badges" width="76" height="76"/>
         <image name="Twitter Badges" width="76" height="76"/>
+        <image name="chat" width="32" height="32"/>
         <image name="chatface" width="245" height="206"/>
     </resources>
 </document>
