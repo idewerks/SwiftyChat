@@ -33,6 +33,7 @@ class SignInViewController: UIViewController {
     }
   }
   
+  
   @IBAction func didTapSignIn(sender: AnyObject) {
     // Sign In with credentials.
     let email = emailField.text
