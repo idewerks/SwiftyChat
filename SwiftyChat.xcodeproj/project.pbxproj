@@ -13,7 +13,11 @@
 		843F20341D4EE41A00D6CBEC /* Appstate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F20331D4EE41A00D6CBEC /* Appstate.swift */; };
 		843F20361D4EE43500D6CBEC /* MeasurementHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F20351D4EE43500D6CBEC /* MeasurementHelper.swift */; };
 		843F20381D4EE45300D6CBEC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F20371D4EE45300D6CBEC /* Constants.swift */; };
-		843F203C1D4EF06A00D6CBEC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F203B1D4EF06A00D6CBEC /* ChatViewController.swift */; };
+		84ABAB521D52CBE3000FDA57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABAB511D52CBE3000FDA57 /* ViewController.swift */; };
+		84ABAB541D52CBFC000FDA57 /* DemoConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABAB531D52CBFC000FDA57 /* DemoConversation.swift */; };
+		84ABAB561D52CC27000FDA57 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABAB551D52CC27000FDA57 /* ChatViewController.swift */; };
+		84ABAB581D52CC36000FDA57 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABAB571D52CC36000FDA57 /* ConversationListViewController.swift */; };
+		84ABAB5A1D52CC45000FDA57 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABAB591D52CC45000FDA57 /* Conversation.swift */; };
 		84B6370E1D518564002AEFEE /* JSQSystemSoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6370D1D518564002AEFEE /* JSQSystemSoundPlayer.framework */; };
 		84D10C9F1D4D8643009755D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D10C9D1D4D8643009755D5 /* Main.storyboard */; };
 		84D10CA11D4D8643009755D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D10CA01D4D8643009755D5 /* Assets.xcassets */; };
@@ -33,7 +37,11 @@
 		843F20331D4EE41A00D6CBEC /* Appstate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appstate.swift; sourceTree = "<group>"; };
 		843F20351D4EE43500D6CBEC /* MeasurementHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
 		843F20371D4EE45300D6CBEC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		843F203B1D4EF06A00D6CBEC /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		84ABAB511D52CBE3000FDA57 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84ABAB531D52CBFC000FDA57 /* DemoConversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoConversation.swift; sourceTree = "<group>"; };
+		84ABAB551D52CC27000FDA57 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		84ABAB571D52CC36000FDA57 /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
+		84ABAB591D52CC45000FDA57 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		84B6370D1D518564002AEFEE /* JSQSystemSoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQSystemSoundPlayer.framework; path = "../../Library/Developer/Xcode/DerivedData/SwiftyChat-ejbxyylpckoxipapozzlpcfqltxt/Build/Products/Debug-iphonesimulator/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework"; sourceTree = "<group>"; };
 		84D10C961D4D8643009755D5 /* SwiftyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D10C9E1D4D8643009755D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,16 +87,20 @@
 			children = (
 				843F202F1D4EE32C00D6CBEC /* AppDelegate.swift */,
 				843F20331D4EE41A00D6CBEC /* Appstate.swift */,
+				84ABAB551D52CC27000FDA57 /* ChatViewController.swift */,
 				843F20371D4EE45300D6CBEC /* Constants.swift */,
+				84ABAB571D52CC36000FDA57 /* ConversationListViewController.swift */,
+				84ABAB591D52CC45000FDA57 /* Conversation.swift */,
+				84ABAB531D52CBFC000FDA57 /* DemoConversation.swift */,
 				84D10CAF1D4DA6C5009755D5 /* FirebaseController.swift */,
 				843F20351D4EE43500D6CBEC /* MeasurementHelper.swift */,
 				843F20311D4EE3D700D6CBEC /* SignInViewController.swift */,
+				84ABAB511D52CBE3000FDA57 /* ViewController.swift */,
 				84D10C9D1D4D8643009755D5 /* Main.storyboard */,
 				84D10CA01D4D8643009755D5 /* Assets.xcassets */,
 				84D10CA21D4D8643009755D5 /* LaunchScreen.storyboard */,
 				843F202A1D4EC9EA00D6CBEC /* GoogleService-Info.plist */,
 				84D10CA51D4D8643009755D5 /* Info.plist */,
-				843F203B1D4EF06A00D6CBEC /* ChatViewController.swift */,
 			);
 			path = SwiftyChat;
 			sourceTree = "<group>";
@@ -239,9 +251,13 @@
 				843F20321D4EE3D700D6CBEC /* SignInViewController.swift in Sources */,
 				843F20301D4EE32C00D6CBEC /* AppDelegate.swift in Sources */,
 				843F20361D4EE43500D6CBEC /* MeasurementHelper.swift in Sources */,
-				843F203C1D4EF06A00D6CBEC /* ChatViewController.swift in Sources */,
+				84ABAB541D52CBFC000FDA57 /* DemoConversation.swift in Sources */,
 				84D10CB01D4DA6C5009755D5 /* FirebaseController.swift in Sources */,
+				84ABAB5A1D52CC45000FDA57 /* Conversation.swift in Sources */,
 				843F20381D4EE45300D6CBEC /* Constants.swift in Sources */,
+				84ABAB521D52CBE3000FDA57 /* ViewController.swift in Sources */,
+				84ABAB581D52CC36000FDA57 /* ConversationListViewController.swift in Sources */,
+				84ABAB561D52CC27000FDA57 /* ChatViewController.swift in Sources */,
 				843F20341D4EE41A00D6CBEC /* Appstate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
