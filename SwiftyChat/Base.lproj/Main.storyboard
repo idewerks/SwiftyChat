@@ -131,7 +131,6 @@
                             <constraint firstItem="016-42-cDz" firstAttribute="top" secondItem="EqJ-2A-854" secondAttribute="bottom" constant="19" id="z0s-Su-DMv"/>
                         </constraints>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="emailField" destination="q5C-1Z-J4u" id="7BP-pw-l0G"/>
@@ -160,7 +159,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="80" id="Dww-xM-enG" customClass="ConversationTableViewCell" customModule="SwiftyChat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="80"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dww-xM-enG" id="jkL-pF-nfB">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="79"/>
@@ -227,7 +226,7 @@
                     <connections>
                         <outlet property="tableView" destination="4S9-xu-k5K" id="dmG-tE-2b7"/>
                         <segue destination="yJf-k7-DDI" kind="show" identifier="ConversationSegue" id="xRm-ll-Lpz"/>
-                        <segue destination="yun-ox-gw6" kind="show" identifier="ChatToSignIn" id="1Hq-4F-k8f"/>
+                        <segue destination="yun-ox-gw6" kind="presentation" identifier="ChatToSignIn" id="1Hq-4F-k8f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bea-c9-dNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
