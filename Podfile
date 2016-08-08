@@ -18,4 +18,8 @@ pod 'GoogleSignIn'
 pod 'TwitterKit'
 pod ‘JSQMessagesViewController’
 
+
+
+#pod 'JSQMessagesViewController', :git => 'https://github.com/jessesquires/JSQMessagesViewController.git', :branch => 'develop'
+
 end
